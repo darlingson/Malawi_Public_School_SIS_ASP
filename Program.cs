@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Malawi_Public_Schools_SIS.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Malawi_Public_Schools_SISAuthDBContextConnection") ?? throw new InvalidOperationException("Connection string 'Malawi_Public_Schools_SISAuthDBContextConnection' not found.");
+
+builder.Services.AddDbContext<Malawi_Public_Schools_SISAuthDBContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<Malawi_Public_Schools_SISUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<Malawi_Public_Schools_SISAuthDBContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
