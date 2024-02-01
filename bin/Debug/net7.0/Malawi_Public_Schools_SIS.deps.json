@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Malawi_Public_Schools_SIS/1.0.0": {
+        "runtime": {
+          "Malawi_Public_Schools_SIS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Malawi_Public_Schools_SIS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

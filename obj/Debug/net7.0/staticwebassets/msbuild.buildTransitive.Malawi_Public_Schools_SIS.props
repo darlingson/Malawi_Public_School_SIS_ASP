@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Malawi_Public_Schools_SIS.props" />
+</Project>
