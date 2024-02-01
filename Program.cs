@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Malawi_Public_Schools_SIS.Data;
+using Malawi_Public_Schools_SIS.Areas.Identity.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Malawi_Public_Schools_SISAuthDBContextConnection") ?? throw new InvalidOperationException("Connection string 'Malawi_Public_Schools_SISAuthDBContextConnection' not found.");
 
